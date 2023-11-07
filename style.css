@@ -9,7 +9,6 @@
 	--white:#ffffff;
 }
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -17,6 +16,7 @@
 body {
 	background: url(images/moroccan-flower-dark.webp) #023600 fixed;
 }
+
 /* == ESTRUCTURA == */
 header {
 	width: 80%;
@@ -67,8 +67,7 @@ section h2 {
 section h3 {
 	text-align: center;
 	margin: 12px 0;
-	font-size: 1.2rem;
-	line-height: 1.8rem;
+
 }
 section p {
 	text-align: center;
@@ -238,43 +237,51 @@ Párrafos:
 font-family: 'Montserrat Alternates', sans-serif;
 */
 
-
 @font-face {
 	font-family: miFuente01;
 	src: url(fonts/AbrilFatface-Regular.ttf);
 }
+
+h1, h2, h3{
+	font-family: 'Taviraj', serif;
+}
+
 h1 {
-	color: rgb(0, 36, 16);
-	font-family: miFuente01;
+	color: var(--main-color1);
 	font-size: 3rem;
 	line-height: 4.5rem;
 }
 h2 {
-	color: rgb(70, 43, 0);
-	font-family: 'Merriweather', serif;
+	color:var(--main-color1);
 	font-weight: 900;
-	font-size: 2.4rem;
-	line-height: 3.6rem;
+	font-size: 2.5rem;
+	line-height: 3.75rem;
 }
 h3 {
-	color: rgb(70, 43, 0);
-	font-family: 'Merriweather', serif;
+	color: var(--main-color2);
 	font-weight: 700;
-	font-size: 1.4rem;
-	line-height: 2.2rem;
+	font-size: 1.3rem;
+	line-height: 1.95rem;
 }
-p {
-	color: rgb(56, 56, 66);
-	font-family: 'Poppins', sans-serif;
+
+p{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.p-content {
+	color:var(--main-color1);
 	font-weight: 300;
 	font-size: 1rem;
-	line-height: 1.6rem;
+	line-height: 1.5rem;
+	font-weight: 400;
 }
+
 .p-footer {
-	color: #f9eedf;
+	color: var(--color1-light-b);
 	font-size: 0.8rem;
 	line-height: 1.2rem;
 }
+
 /* == IMAGENES == */
 .container-01 > div img, .container-02 > div img {
 	width: 100%;
