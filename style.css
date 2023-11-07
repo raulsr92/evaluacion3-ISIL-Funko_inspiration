@@ -1,3 +1,15 @@
+/* == VARIABLES COLORES == */
+:root {
+	--main-color1:#1b2651;
+	--main-color2:#CD2028;
+	--color1-light-a:#283877;
+	--color1-light-b:#536AC5;
+	--color2-light-a:#E5565E;
+	--color2-light-b:#EE8F94;
+	--white:#ffffff;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
