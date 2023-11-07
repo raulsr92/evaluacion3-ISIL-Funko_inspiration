@@ -137,6 +137,7 @@ section p {
 	  	}
 	}
 /* == FIN DE MENU SUPERIOR == */
+
 /* == SLIDE == */
 #intro {
 	display: flex;
@@ -228,6 +229,16 @@ a.boton:hover {
 :root {
 	font-size: 20px; /* MEDIDA BASE: 20px = 1rem */
 }
+
+/*
+Encabezados:
+font-family: 'Taviraj', serif;
+
+Párrafos:
+font-family: 'Montserrat Alternates', sans-serif;
+*/
+
+
 @font-face {
 	font-family: miFuente01;
 	src: url(fonts/AbrilFatface-Regular.ttf);
