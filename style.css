@@ -142,7 +142,8 @@ section p {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
-	background: url(images/pexels-rachel-claire-5865282-main.jpg) no-repeat left center;
+	background: url(./img-ep03-editadas/background-funko-1.jpg) no-repeat center ;
+	background-size: cover;
 	padding: 4% 8%;
 	min-height: 300px;
 	width: 84%;
