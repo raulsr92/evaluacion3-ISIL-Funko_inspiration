@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive website - Carta</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/afd7f81c7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<img src="images/logo.png">
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="carta.html">Carta</a>
+			<a href="servicios.html">Servicios</a>
+			<a href="nosotros.html">Nosotros</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    	<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</header>
+	<main>
+		<section id="fondo-titular">
+			<h1>Carta</h1>
+		</section>
+		<section>
+			<h2>Cada dia un plato distinto</h2>
+			<div class="container-01">
+				<div>
+					<img src="images/pexels-nataliya-vaitkevich-5605523.jpg">
+					<h3>Lunes</h3>
+					<p>El mejor sabor del mar con condimentos andinos</p>
+				</div>
+				<div>
+					<img src="images/pexels-navada-ra-1703272.jpg">
+					<h3>Martes</h3>
+					<p>Sopa de verduras con el sabor casero de mamá</p>
+				</div>
+				<div>
+					<img src="images/pexels-piotr-arnoldes-7111473.jpg">
+					<h3>Miércoles</h3>
+					<p>El sabor gourmet combinado con ingredientes picantes</p>
+				</div>
+				<div>
+					<img src="images/plato01.jpg">
+					<h3>Jueves</h3>
+					<p>La delicia de ciudad con aderezo a la italiana</p>
+				</div>
+				<div>
+					<img src="images/plato02.jpg">
+					<h3>Viernes</h3>
+					<p>Un nuevo sabor con viejas recetas caseras</p>
+				</div>
+				<div>
+					<img src="images/pexels-nataliya-vaitkevich-5605523.jpg">
+					<h3>Sábado</h3>
+					<p>El mejor sabor del mar con condimentos andinos</p>
+				</div>
+				<div>
+					<img src="images/pexels-navada-ra-1703272.jpg">
+					<h3>Domingo</h3>
+					<p>Sopa de verduras con el sabor casero de mamá</p>
+				</div>
+			</div>
+		</section>
+		<section style="background: #F9EEDF;">
+			<h2>Nuestra experiencia</h2>
+			<div class="container-02">
+				<video controls preload poster="images/video-the-living-library.jpg">
+					<source src="media/the-living-library.mp4" type="video/mp4">
+				</video>
+			</div>
+		</section>
+		<section>
+			<h2>Nuestros insumos</h2>
+			<div class="container-01">
+				<div>
+					<img src="images/pexels-anastasia-belousova-3233275.jpg">
+					<h3>Compra</h3>
+					<p>Seguridad alimentaria y medidas patra protección de productos y clientes</p>
+				</div>
+				<div>
+					<img src="images/pexels-pixabay-531446.jpg">
+					<h3>Venta</h3>
+					<p>Eficacia en la presentación de nuestros productos, con garantía de asepcia</p>
+				</div>
+				<div>
+					<img src="images/pexels-ella-olsson-3026802.jpg">
+					<h3>Distribución</h3>
+					<p>Tiempos cortos y satisfacción total al momento de la entrega por delivery</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<i class="fa-brands fa-square-whatsapp fa-2xl enlace-icono" style="color: #0affa1;"></i>
+	<footer>
+		<p class="p-footer">2023. Todos los derechos reservados.</p>
+	</footer>
+	<!-- JS PARA MENU SUPERIOR -->
+	<script type="text/javascript">
+		function myFunction() {
+  			var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+    			x.className += " responsive";
+  			} else {
+    		x.className = "topnav";
+  			}
+		}
+	</script>
+</body>
+</html>
