@@ -14,7 +14,7 @@
 	padding: 0;
 }
 body {
-	background: url(./img-ep03-editadas/background-img-07.png) #023600 fixed;
+	background: url(./img-ep03-editadas/back-3.jpg) #023600 fixed;
 }
 
 /* == ESTRUCTURA == */
@@ -245,7 +245,7 @@ section p {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
-	background: url(img-ep03-sineditar/background-funko-2.jpg) no-repeat center;
+	background: url(img-ep03-editadas/background-img-07.jpg) no-repeat center;
 	background-size: cover;
 	padding: 4% 8%;
 	width: 84%;
@@ -313,9 +313,10 @@ h1, h2, h3{
 }
 
 h1 {
-	color: var(--main-color);
+	color: var(--main-color-light);
 	font-size: 3rem;
 	line-height: 4.5rem;
+	text-shadow: 3px 2px 20px var(--main-color-hard);
 }
 h2 {
 	color:var(--main-color);
