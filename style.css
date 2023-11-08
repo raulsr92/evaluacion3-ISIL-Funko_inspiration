@@ -245,7 +245,8 @@ section p {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
-	background: url(images/pexels-cats-coming-955137.jpg) no-repeat center left;
+	background: url(img-ep03-sineditar/background-funko-2.jpg) no-repeat center;
+	background-size: cover;
 	padding: 4% 8%;
 	width: 84%;
 }
