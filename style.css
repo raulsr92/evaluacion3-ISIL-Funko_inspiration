@@ -12,7 +12,7 @@
 	padding: 0;
 }
 body {
-	background: url(images/moroccan-flower-dark.webp) #023600 fixed;
+	background: url(./img-ep03-editadas/background-img-07.png) #023600 fixed;
 }
 
 /* == ESTRUCTURA == */
@@ -21,7 +21,7 @@ header {
 	height: auto;
 	margin: 0 auto;
 	padding: 1% 0;
-	background-color: #f9eedf;
+	background-color:var(--secondary-color);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -134,6 +134,18 @@ section p {
 	  	}
 	}
 /* == FIN DE MENU SUPERIOR == */
+
+/* == HIPERVÍNCULOS == */
+
+.enlace-subtitulo{
+	text-decoration: none;
+	color: var(--main-color);
+}
+
+.enlace-subtitulo:hover{
+	color: var(--tertiary-color);
+	text-decoration: underline;
+}
 
 /* == SLIDE == */
 #intro {
@@ -257,7 +269,6 @@ h2 {
 	line-height: 3.75rem;
 }
 h3 {
-	color: var(--main-color);
 	font-weight: 700;
 	font-size: 1.3rem;
 	line-height: 1.95rem;
