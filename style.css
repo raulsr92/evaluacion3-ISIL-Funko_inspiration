@@ -57,7 +57,7 @@ footer {
 	width: 80%;
 	height: auto;
 	margin: 0 auto;
-	padding: 1% 0;
+	/*padding: 1% 0;*/
 	background-color: #201500;
 	display: grid;
 	grid-template-columns: auto;
@@ -68,7 +68,75 @@ footer section:nth-child(2) img{
 	width: 130px;
 }
 
-/* == FOOTER == */
+#footer-up{
+	width: 100%;
+	background: var(--tertiary-color);
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	box-sizing: border-box;
+}
+
+#footer-up div{
+	display: flex;
+	column-gap: 30px;
+}
+
+
+#footer-down{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 30px 20px 35px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: 
+		"footer-up-left 			footer-up-right"
+		"footer-middle 				footer-middle"
+		"footer-down	 			footer-down"
+	;
+	row-gap: 35px;
+}
+
+#footer-down-one{
+	grid-area: footer-up-left;
+}
+
+#footer-down-two{
+	grid-area: footer-up-right;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	column-gap: 10px;
+}
+
+#footer-down-three{
+	grid-area: footer-middle ;
+	display: flex;
+	column-gap: 20px;
+}
+
+#footer-down-four{
+	grid-area: footer-down;
+	display: flex;
+	justify-content: center;
+}
+
+#footer-down-two >  div{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 15px;
+}
+
+#footer-down-three > div{
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+}
+
+
+
+/* == FIN DEL FOOTER == */
 
 
 section {
