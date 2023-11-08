@@ -36,8 +36,11 @@ header {
 	z-index: 1000;
 }
 header img { 
-	margin: 1% 30px;
 	width: 130px;
+}
+
+header>a{ 
+	margin: 1% 30px;
 	align-self: center;
 }
 main {
@@ -47,15 +50,27 @@ main {
 	margin: 0 auto;
 	background-color: #FFFFFF;
 }
+
+/* == FOOTER == */
+
 footer {
 	width: 80%;
 	height: auto;
 	margin: 0 auto;
 	padding: 1% 0;
 	background-color: #201500;
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(2,auto);
 }
+
+footer section:nth-child(2) img{
+	width: 130px;
+}
+
+/* == FOOTER == */
+
+
 section {
 	width: 96%;
 	height: 100%;
