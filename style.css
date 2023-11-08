@@ -22,19 +22,23 @@ header {
 	width: 80%;
 	height: auto;
 	margin: 0 auto;
-	padding: 1% 0;
-	background-color:var(--secondary-color);
-	display: flex;
+	/*padding: 1% 0;*/
+	background-color:var(--main-color-light);
+	/*display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center;*/
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	grid-auto-rows: 80px;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
 }
 header img { 
-	margin: 0 30px;
+	margin: 1% 30px;
 	width: 130px;
+	align-self: center;
 }
 main {
 	width: 80%;
@@ -74,28 +78,40 @@ section p {
 	font-size: 0.9rem;
 	line-height: 1.3rem;
 }
+
+#marketing-space{
+	padding: 30px;
+}
+
 /* ==  MENU SUPERIOR == */
 	/* Add a black background color to the top navigation */
 	.topnav {
 		overflow: hidden;
 		margin: 0 30px;
+		display: flex;
+		column-gap: 20px;
 	}
 	/* Style the links inside the navigation bar */
+	
+	/*
 	.topnav a {
 		float: left;
 		display: block;
 		color: rgb(56, 56, 66);
-		font-family: 'Poppins', sans-serif;
+		font-family: 'Montserrat Alternates', sans-serif;
 		font-weight: 700;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
 		font-size: 0.9rem;
 	}
+	*/
 	/* Change the color of links on hover */
+	/*
 	.topnav a:hover {
 		color: #7a5000;
-	}
+	}*/
+
 	/* Add an active class to highlight the current page */
 	.topnav a.active {
 		background-color: #04AA6D;
@@ -163,6 +179,28 @@ section p {
 	text-decoration: underline var(--gray-color-hard);
 }
 
+.enlace-header-options{
+	text-transform: uppercase;
+	color: var(--main-color-hard);
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	/*padding: 14px 16px;*/
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 20px 16px 24px 16px;
+	align-self: end;
+}
+
+.enlace-header-options:hover{
+	background-color: var(--main-color-hard);
+	color:var(--secondary-color);
+
+}
+
+
+
+
 /* == SLIDE == */
 #intro {
 	display: flex;
@@ -215,7 +253,7 @@ section p {
 a.boton {
 	color: #fff;
 	background: #00833D;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 700;
 	text-align: center;
 	padding: 14px 16px;
