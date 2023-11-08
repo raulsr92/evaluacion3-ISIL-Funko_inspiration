@@ -5,6 +5,8 @@
 	--main-color-hard:#005594;
 	--secondary-color:#fff;
 	--tertiary-color:#111111;
+	--gray-color-light:#F3F3F7;
+	--gray-color-hard:#6C6C6C;
 }
 
 * {
@@ -145,6 +147,20 @@ section p {
 .enlace-subtitulo:hover{
 	color: var(--tertiary-color);
 	text-decoration: underline;
+}
+
+
+.enlace-footer{
+	color: var(--gray-color-hard);
+	text-decoration: none;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 500;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+}
+
+.enlace-footer{
+	text-decoration: underline var(--gray-color-hard);
 }
 
 /* == SLIDE == */
