@@ -65,7 +65,7 @@ footer {
 }
 
 footer section:nth-child(2) img{
-	width: 130px;
+	width: 150px;
 }
 
 #footer-up{
@@ -81,7 +81,6 @@ footer section:nth-child(2) img{
 	display: flex;
 	column-gap: 30px;
 }
-
 
 #footer-down{
 	box-sizing: border-box;
@@ -133,7 +132,6 @@ footer section:nth-child(2) img{
 	column-gap: 5px;
 	align-items: center;
 }
-
 
 
 /* == FIN DEL FOOTER == */
@@ -248,17 +246,16 @@ section p {
 	text-decoration: underline;
 }
 
-
 .enlace-footer{
 	color: var(--gray-color-hard);
 	text-decoration: none;
 	font-family: 'Montserrat Alternates', sans-serif;
-	font-weight: 500;
-	font-size: 0.8rem;
-	line-height: 1.2rem;
+	font-weight: 600;
+	font-size: 0.7rem;
+	line-height: 1.05rem;
 }
 
-.enlace-footer{
+.enlace-footer:hover{
 	text-decoration: underline var(--gray-color-hard);
 }
 
