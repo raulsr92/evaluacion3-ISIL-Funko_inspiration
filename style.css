@@ -327,20 +327,29 @@ section p {
 
 /* == SLIDE == */
 #intro {
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: flex-start;*/
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: 
+	 "top-left 		top-right"
+	 "middle-left 	middle-right"
+	 "bottom-left 	bottom-right"
+	;
 	background: url(./img-ep03-editadas/background-img-01.jpg) no-repeat center ;
 	background-size: cover;
-	padding: 4% 8%;
+	padding: 6% 3%;
 	min-height: 300px;
-	width: 84%;
+	width: 94%;
 	animation-name: animacion-intro;
 	animation-duration: 300ms;
 	animation-timing-function: ease;
 }
+
 @keyframes animacion-intro {
 	from {
 		filter: opacity(0%);
@@ -353,16 +362,24 @@ section p {
 }
 #intro h1 {
 	padding-bottom: 2%;
-	width: 50%;
-	color: #fff;
+	width: 70%;
+	color:var(--secondary-color);
 	text-shadow: 5px 3px 3px #140d00;
+	text-transform: uppercase;
+	font-size: 2rem;
+	line-height: 3rem;
+	font-family: 'Montserrat Alternates', sans-serif;
+	grid-area: top-left;
 }
+
 #intro p {
 	text-align: left;
-	width: 50%;
-	color: #fff;
+	width: 70%;
+	color:var(--secondary-color);
 	text-shadow: 5px 3px 3px #140d00;
+	grid-area: middle-left;
 }
+
 #fondo-titular {
 	display: flex;
 	flex-direction: column;
@@ -390,7 +407,10 @@ section p {
 	border-radius: 20px;
 	text-transform: uppercase;
 	box-shadow: 0px 0px 8px 3px var(--gray-color-light);
+	grid-area: bottom-left;
+	justify-self: start;
 }
+
 .boton-tipo-1:hover {
 	color:var(--main-color);
 	background: var(--secondary-color);
