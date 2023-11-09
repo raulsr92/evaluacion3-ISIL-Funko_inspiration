@@ -120,6 +120,7 @@ footer section:nth-child(2) img{
 	grid-area: footer-middle ;
 	display: flex;
 	column-gap: 20px;
+	align-items: center;
 }
 
 #footer-down-four{
@@ -156,12 +157,14 @@ section {
 section h2 {
 	margin-bottom: 20px;
 	text-align: center;
+	text-transform: uppercase;
 }
 section h3 {
 	text-align: center;
 	margin: 12px 0;
-
+	text-transform: uppercase;
 }
+
 section p {
 	text-align: center;
 	font-size: 0.9rem;
@@ -259,8 +262,8 @@ section p {
 	text-decoration: none;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 600;
-	font-size: 0.7rem;
-	line-height: 1.05rem;
+	font-size: 0.6rem;
+	line-height: 0.9rem;
 }
 
 .enlace-footer:hover{
@@ -435,13 +438,13 @@ h1 {
 h2 {
 	color:var(--main-color);
 	font-weight: 900;
-	font-size: 2.5rem;
-	line-height: 3.75rem;
+	font-size: 1.9rem;
+	line-height: 2.85rem;
 }
 h3 {
 	font-weight: 700;
-	font-size: 1.3rem;
-	line-height: 1.95rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 
 
@@ -452,15 +455,16 @@ p{
 .p-content {
 	color:var(--main-color-hard);
 	font-weight: 300;
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
 	font-weight: 400;
 }
 
 .p-footer {
-	color: var(--main-color-light);
-	font-size: 0.8rem;
-	line-height: 1.2rem;
+	color: var(--gray-color-hard);
+	font-size: 0.6rem;
+	line-height: 0.9rem;
+	font-weight: 500;
 }
 
 
