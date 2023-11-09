@@ -78,8 +78,16 @@ footer section:nth-child(2) img{
 }
 
 #footer-up div{
+	box-sizing: border-box;
 	display: flex;
-	column-gap: 30px;
+	column-gap: 15px;
+}
+
+#footer-up > div > div{
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
 }
 
 #footer-down{
@@ -278,6 +286,25 @@ section p {
 
 }
 
+.enlace-icon-media{
+	font-size: 1.2rem;
+	color: var(--tertiary-color);
+	background: var(--secondary-color);
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.enlace-icon-media:hover{
+	font-size: 1.3rem;
+	color: var(--main-color);
+	width: 48px;
+	height: 48px;
+}
 
 
 
