@@ -299,6 +299,9 @@ section p {
 	text-decoration: none;
 	justify-content: center;
 	align-items: center;
+	transition-property: all;
+	transition-duration: 100ms;
+	transition-timing-function: ease;
 }
 
 .enlace-icon-media:hover{
@@ -325,6 +328,16 @@ section p {
 	filter: brightness(1.5);
 }
 
+.enlace-img-products img{
+	transition-property: all;
+	transition-duration: 300ms;
+	transition-timing-function: ease;
+}
+
+.enlace-img-products img:hover{
+	transform: translate(0, -25px);
+}
+
 /* == SLIDE == */
 #intro {
 	/*display: flex;
@@ -346,7 +359,7 @@ section p {
 	min-height: 300px;
 	width: 94%;
 	animation-name: animacion-intro;
-	animation-duration: 300ms;
+	animation-duration: 1s;
 	animation-timing-function: ease;
 }
 
@@ -354,12 +367,15 @@ section p {
 	from {
 		filter: opacity(0%);
 		transform: translateY(-200px);
+
 	}
 	to {
 		filter: opacity(100%);
 		transform: translateY(0);
+
 	}
 }
+
 #intro h1 {
 	padding-bottom: 2%;
 	width: 60%;
@@ -391,18 +407,47 @@ section p {
 	background-size: cover;
 	padding: 5% 5%;
 	width: 90%;
+	animation: 
+		1s animacion-fondo-titular   linear;
+
 }
+
+@keyframes animacion-fondo-titular {
+	from {
+		transform: translateX(100vh);
+		transform: rotate(10deg);
+
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+
+
 
 #fondo-titular h1{
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 2.5rem;
-	color: var(--secondary-color);
 	text-shadow:3px 2px 10px var(--main-color-light);
+	color: var(--secondary-color);
 
+	animation: 
+	1s animacion-texto  linear;
 }
 
+@keyframes animacion-texto {
+	from {
+		color: var(--main-color-light);
+
+	}
+	to {
+		color: var(--secondary-color);
+
+	}
+}
 
 #intro .boton-tipo-1, #intro .boton-tipo-2{
 	grid-area: bottom-left;
@@ -568,7 +613,7 @@ p{
 	width: 100%;
 	/*box-shadow: 5px 5px 8px rgb(170, 170, 170);
 	border-radius: 25px 0;*/
-	box-shadow: 3px 3px 10px 0px var(--main-color-light);
+	/*box-shadow: 3px 3px 10px 0px var(--main-color-light);*/
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 
@@ -600,6 +645,9 @@ p{
 	right: 0.5%;
 	bottom: 10%;
 	box-shadow: 0px 0px 10px 5px var(--main-color-light);
+	transition-property: all;
+	transition-duration: 300ms;
+	transition-timing-function: ease;
 }
 
 .enlace-btn-flotante:hover{
