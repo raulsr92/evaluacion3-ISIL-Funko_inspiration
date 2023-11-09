@@ -308,6 +308,15 @@ section p {
 	height: 48px;
 }
 
+.enlace-footer-terms{
+	color: var(--main-color);
+	font-weight: 700;
+}
+
+.enlace-footer-terms:hover{
+	color: var(--main-color-hard);
+}
+
 .enlace-img-products{
 	filter: none;
 }
@@ -315,7 +324,6 @@ section p {
 .enlace-img-products:hover{
 	filter: brightness(1.5);
 }
-
 
 /* == SLIDE == */
 #intro {
