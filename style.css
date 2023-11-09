@@ -306,6 +306,13 @@ section p {
 	height: 48px;
 }
 
+.enlace-img-products{
+	filter: none;
+}
+
+.enlace-img-products:hover{
+	filter: brightness(1.5);
+}
 
 
 /* == SLIDE == */
@@ -460,9 +467,10 @@ p{
 /* == IMAGENES == */
 .container-01 > div img, .container-02 > div img {
 	width: 100%;
-	box-shadow: 5px 5px 8px rgb(170, 170, 170);
-	border-radius: 25px 0;
+	/*box-shadow: 5px 5px 8px rgb(170, 170, 170);
+	border-radius: 25px 0;*/
 }
+
 /* == ICONOS == */
 .enlace-icono {
 	position: fixed;
