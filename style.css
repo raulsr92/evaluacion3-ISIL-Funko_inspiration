@@ -362,14 +362,15 @@ section p {
 }
 #intro h1 {
 	padding-bottom: 2%;
-	width: 70%;
+	width: 60%;
 	color:var(--secondary-color);
 	text-shadow: 5px 3px 3px #140d00;
 	text-transform: uppercase;
 	font-size: 2rem;
 	line-height: 3rem;
-	font-family: 'Montserrat Alternates', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	grid-area: top-left;
+	font-weight: 900;
 }
 
 #intro p {
@@ -388,9 +389,24 @@ section p {
 	align-items: flex-start;
 	background: url(img-ep03-editadas/background-img-07.jpg) no-repeat center;
 	background-size: cover;
-	padding: 4% 8%;
-	width: 84%;
+	padding: 5% 5%;
+	width: 90%;
 }
+
+#fondo-titular h1{
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: var(--secondary-color);
+}
+
+
+#intro .boton-tipo-1, #intro .boton-tipo-2{
+	grid-area: bottom-left;
+	justify-self: start;
+}
+
 /* == BOTONES == */
 .boton-tipo-1 {
 	color:var(--secondary-color);
@@ -407,8 +423,7 @@ section p {
 	border-radius: 20px;
 	text-transform: uppercase;
 	box-shadow: 0px 0px 8px 3px var(--gray-color-light);
-	grid-area: bottom-left;
-	justify-self: start;
+
 }
 
 .boton-tipo-1:hover {
@@ -486,7 +501,12 @@ font-family: 'Taviraj', serif;
 
 Párrafos:
 font-family: 'Montserrat Alternates', sans-serif;
+
+Extra:
+font-family: 'Roboto', sans-serif;
 */
+
+
 
 @font-face {
 	font-family: miFuente01;
