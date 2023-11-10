@@ -843,6 +843,38 @@ p{
 		width: 40%;
 		border: none;
 	}
+	
+	#footer-down{
+		grid-template-columns: repeat(1, auto);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+			"footer-up"
+			"footer-middle1"
+			"footer-middle2"
+			"footer-down"
+		;
+	}
+	
+	#footer-down-one{
+		grid-area: footer-up;
+		justify-self: center;
+	}
+
+	#footer-down-two{
+		grid-area: footer-middle1;
+	}
+
+	#footer-down-three{
+		grid-area: footer-middle2;
+	}
+
+	#footer-down-four{
+		grid-area: footer-down;
+	}
+
+	.p-footer-main{
+		font-size: 0.8rem;
+	}
 
 }
 
@@ -932,11 +964,8 @@ fieldset> div{
 input[type="text"]:focus, textarea:focus, select:focus{
 	box-shadow: 4px 4px 0px 3px var(--tertiary-color);
 	transform: translate(-5px, -10px);
-
 }
-
 /* == FIN FORMULARIO == */
-
 
 
 /* == MEDIA QUERIES MOVILES == */
@@ -1036,6 +1065,45 @@ input[type="text"]:focus, textarea:focus, select:focus{
 	}
 	#fondo-titular {
 		align-items: center;
+	}
+
+	#footer-down-two{
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: 
+			"listLeft1 	listRight1"
+			"listLeft2 	listRight1"
+			"listLeft2 	listRight3"
+		;
+		row-gap: 30px;
+	}
+
+	#footer-down-two div:nth-child(1){
+		grid-area: listLeft1;
+	}
+
+	#footer-down-two div:nth-child(3){
+		grid-area: listRight1;
+	}
+
+	#footer-down-two div:nth-child(2){
+		grid-area: listLeft2;
+	}
+
+	#footer-down-two div:nth-child(4){
+		grid-area: listRight3;
+	}
+
+	#footer-down-three{
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+		align-items: flex-start;
+	}
+
+	#footer-down{
+		row-gap: 25px;
 	}
 
 }
