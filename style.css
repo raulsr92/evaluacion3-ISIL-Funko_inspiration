@@ -667,7 +667,9 @@ p{
 
 /* == VIDEO == */
 .container-02 video {
-	width: 84%;
+	width: 80%;
+	border-radius: 20px;
+	box-shadow: 5px 4px 15px 1px var(--main-color);
 }
 .container {
 	position: relative;
@@ -724,7 +726,6 @@ p{
 }
 
 /* == FORMULARIO == */
-
 
 #fondo-form{
 	background: var(--gray-color-light);
