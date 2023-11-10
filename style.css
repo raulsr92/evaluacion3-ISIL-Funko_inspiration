@@ -34,7 +34,10 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 1000;
+	box-sizing: border-box;
+	padding: 0 1%;
 }
+
 header img { 
 	width: 130px;
 }
@@ -67,6 +70,7 @@ header img {
 	column-gap: 13px;
 	position: relative;
 	padding-top: 5px;
+	justify-content: space-around;
 }
 
 .enlace-icon-search{
@@ -536,7 +540,8 @@ section p {
 	border-radius: 20px;
 	text-transform: uppercase;
 	box-shadow: 0px 0px 8px 3px var(--gray-color-light);
-
+	display: flex;
+	align-items: center;
 }
 
 .boton-tipo-1:hover {
@@ -560,6 +565,8 @@ section p {
 	border-radius: 20px;
 	text-transform: uppercase;
 	box-shadow: 0px 0px 8px 3px var(--main-color);
+	display: flex;
+	align-items: center;
 } 
 
 .boton-tipo-2:hover{
