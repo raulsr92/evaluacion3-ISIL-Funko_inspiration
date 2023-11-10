@@ -444,7 +444,7 @@ section p {
 
 #intro h1 {
 	padding-bottom: 2%;
-	width: 60%;
+	width: 70%;
 	color:var(--secondary-color);
 	text-shadow:3px 2px 10px var(--main-color-light);
 	text-transform: uppercase;
@@ -806,19 +806,38 @@ p{
 	header img {
 		padding: 20px 0;
 	}
+
 	#intro {
-		align-items: center;
-		background: url(img-ep03-editadas/background-img-01.jpg) no-repeat bottom center;
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: 
+		 "top-left 		top-right"
+		 "middle-left 	middle-right"
+		 "bottom-left 	bottom-right";
+		justify-items: center;
+		background: url(img-ep03-editadas/background-img-01.jpg) no-repeat right;
 		padding-top: 200px;
-		background-size: cover;
+		/*background-size: cover;*/
 	}
+
+	#intro .boton-tipo-1, #intro .boton-tipo-2{
+		justify-self: center;
+		align-self: center;
+	}
+
 	#intro h1 {
 		text-align: center;
 		width: 100%;
+		text-shadow: 5px 4px 2px var(--main-color);
 	}
+
 	#intro p {
 		text-align: center;
 		width: 80%;
+		text-shadow: 5px 4px 2px var(--main-color);
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+
 	}
 	.container-01 > div, .container-02 > div {
 		width: 40%;
