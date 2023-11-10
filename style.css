@@ -39,8 +39,44 @@ header img {
 	width: 130px;
 }
 
+#rightnav input{
+	border-radius: 40px;
+	border: 0;
+	padding-left: 10px;
+	padding-top: 1px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.5rem;
+	outline: 0;
+	width: 150px;
+}
+
+#search-mobile{
+	display: none;
+}
+
+
+#rightnav input:focus{
+	outline: 2px solid var(--main-color-hard);
+}
+
+
+
+#rightnav{
+	align-self: center;
+	display: flex;
+	column-gap: 13px;
+	position: relative;
+	padding-top: 5px;
+}
+
+.enlace-icon-search{
+	position: absolute;
+	left: 120px;
+	top:10px;
+}
+
 header>a{ 
-	margin: 1% 30px;
+	margin: 1% 10px 1% 30px;
 	align-self: center;
 }
 main {
@@ -178,7 +214,7 @@ section p {
 	/* Add a black background color to the top navigation */
 	.topnav {
 		overflow: hidden;
-		margin: 0 30px;
+		margin: 0 15px;
 		display: flex;
 		column-gap: 20px;
 	}
@@ -216,20 +252,30 @@ section p {
 	@media screen and (max-width: 768px) {
 		.topnav {
 			width: 100%;
-			background-color: #d6be77;
+			background-color: var(--main-color-light);
+			margin: 0;
+			align-items: center;
+			justify-content: space-between;
+			width: 90%;
+			margin: 0 auto;
 		}
+
 		.topnav a:not(:first-child) {
 	  		display: none;
 		}
 		.topnav a.icon {
 	    	float: right;
 	    	display: block;
+			color: var(--main-color-hard);
+			font-size: 0.8rem;
+			padding: 20px 16px 24px 16px;
 	  	}
 	}
 	/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 	@media screen and (max-width: 768px) {
 		.topnav.responsive {
 	  		position: relative;
+			display: grid;
 	  	}
 	  	.topnav.responsive a.icon {
 	    	position: absolute;
@@ -277,7 +323,7 @@ section p {
 	text-align: center;
 	/*padding: 14px 16px;*/
 	text-decoration: none;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	padding: 20px 16px 24px 16px;
 	align-self: end;
 }
@@ -310,6 +356,26 @@ section p {
 	width: 48px;
 	height: 48px;
 }
+
+.enlace-icon-header{
+	font-size: 1.3rem;
+	color: var(--main-color-hard);
+	text-decoration: none;
+	transition-property: all;
+	transition-duration: 500ms;
+	transition-timing-function: ease;
+}
+
+.enlace-icon-header:hover{
+	color: var(--secondary-color);
+}
+
+.enlace-icon-search{
+	font-size: 0.7rem;
+	color: var(--tertiary-color);
+}
+
+
 
 .enlace-footer-terms{
 	color: var(--main-color);
@@ -701,14 +767,50 @@ p{
 	header {
 		flex-direction: column;
 		padding: 0;
+		grid-template-columns: repeat(1,auto);
+		grid-template-areas: 
+		"top-header"
+		"middle-header"
+		"bottom-header"
+		;
+		grid-auto-rows: auto;
+		row-gap: 10px;
 	}
+	
+	header>a{
+		grid-area: top-header;
+		justify-self: center;
+		margin: 0;
+	}
+
+	.topnav{
+		grid-area: bottom-header;
+	}
+
+	#rightnav{
+		grid-area: middle-header;
+		justify-self: center;
+		column-gap: 20px;
+		padding-top: 0;
+	}
+	
+	.enlace-icon-search{
+		top:8px;
+		left: 220px;
+	}
+
+	#rightnav input{
+		width: 250px;
+	}
+
 	header img {
 		padding: 20px 0;
 	}
 	#intro {
 		align-items: center;
-		background: url(images/pexels-rachel-claire-5865282-main.jpg) no-repeat bottom center;
+		background: url(img-ep03-editadas/background-img-01.jpg) no-repeat bottom center;
 		padding-top: 200px;
+		background-size: cover;
 	}
 	#intro h1 {
 		text-align: center;
@@ -831,6 +933,67 @@ input[type="text"]:focus, textarea:focus, select:focus{
 		flex-direction: column;
 		padding: 0;
 	}
+
+	#search-mobile{
+		display: none;
+	}
+
+	#search-mobile{
+		grid-area: middle2-header;
+		display: flex;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	#search-mobile input{
+		border-radius: 40px;
+		border: 0;
+		padding-left: 10px;
+		padding-top: 1px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 0.5rem;
+		outline: 0;
+		width: 250px;
+		height: 30px;
+	}
+
+	.enlace-icon-search{
+		display: block;
+	}
+
+	#earch-mobile input:focus{
+		outline: 2px solid var(--main-color-hard);
+	}
+
+	.enlace-icon-search2{
+		position: absolute;
+		right: 12px;
+		top:8px;
+		font-size: 0.7rem;
+	}
+
+	#rightnav input{
+		display: none;
+	}
+
+	.enlace-icon-search{
+		display: none;
+	}
+
+	#rightnav{
+		column-gap: 30px;
+	}
+
+	header {
+		grid-template-columns: repeat(1,auto);
+		grid-template-areas: 
+		"top-header"
+		"middle-header"
+		"middle2-header"
+		"bottom-header"
+		;
+	}
+
 	header img {
 		padding: 20px 0;
 	}
