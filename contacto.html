@@ -34,36 +34,107 @@
 		<section id="fondo-titular">
 			<h1>Orders</h1>
 		</section>
-		<section>
-			<h2>Check your Orders</h2>
-			<div class="container-01">
-				<div>
-					<img src="images/pexels-nataliya-vaitkevich-5605523.jpg">
-					<h3>Chupe de mariscos</h3>
-					<p>El mejor sabor del mar con condimentos andinos</p>
-				</div>
-				<div>
-					<img src="images/pexels-navada-ra-1703272.jpg">
-					<h3>El Clásico</h3>
-					<p>Sopa de verduras con el sabor casero de mamá</p>
-				</div>
-				<div>
-					<img src="images/pexels-piotr-arnoldes-7111473.jpg">
-					<h3>Crema de langostinos</h3>
-					<p>El sabor gourmet combinado con ingredientes picantes</p>
-				</div>
-				<div>
-					<img src="images/plato01.jpg">
-					<h3>Crema de espárragos</h3>
-					<p>La delicia de ciudad con aderezo a la italiana</p>
-				</div>
-				<div>
-					<img src="images/plato02.jpg">
-					<h3>Sopa de champiñones</h3>
-					<p>Un nuevo sabor con viejas recetas</p>
-				</div>
-			</div>
+
+		<section id="fondo-form">
+			<section id="form-container">
+				<h2>Check your Orders</h2>
+				<p class="p-content">See your order even if you are not a registered user. Enter the order number and the billing address ZIP code.</p>
+				<form action="action_page.php">
+					<label for="order-number" class="p-content">Order Number</label>
+					<input type="text" id="order-number" placeholder="Your Order Number" required>
+	
+					<label for="order-email" class="p-content">Order Email</label>
+					<input id="order-email" type="text" placeholder="Your Email" required>
+						
+					<label for="zip-code" class="p-content">Billing ZIP Code</label>
+					<input id="zip-code" type="text" placeholder="Your Zip Code" required>
+	
+					<fieldset>
+						<label for="continent" class="p-content">Select your Continent</label>
+						<select name="marcas-autos" id="continent" required>
+							<option value="Volvo">--Despliega y elige 1 opción--</option>
+							<option value="North America">North America</option>
+							<option value="South America">South America</option>
+							<option value="Europe">Europe</option>
+							<option value="Asia">Asia</option>
+							<option value="Africa">Africa</option>
+							<option value="Oceania">Oceania</option>
+						</select>
+					</fieldset>
+	
+					<fieldset>
+						<p class="p-content">Select your category of product:</p>
+						<div>
+							<div>
+								<input type="radio" value="POP" id="category-01" name="categories">
+								<label for="category-01" class="p-content">POP!</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="BITTY POP" id="category-02" name="categories">
+								<label for="category-02" class="p-content">BITTY POP!</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="REWIND" id="category-03" name="categories">
+								<label for="category-03" class="p-content">REWIND</label>
+							</div>
+							
+							<div>
+								<input type="radio" value="VINYL SODA" id="category-04" name="categories">
+								<label for="category-04" class="p-content">VINYL SODA</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="VINYL GOLD" id="category-05" name="categories">
+								<label for="category-05" class="p-content">VINYL GOLD</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="MINI FIGURES" id="category-06" name="categories">
+								<label for="category-06" class="p-content">MINI FIGURES</label>
+							</div>
+							
+							<div>
+								<input type="radio" value="GAMES" id="category-07" name="categories">
+								<label for="category-07" class="p-content">GAMES</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="POPSIES" id="category-08" name="categories">
+								<label for="category-08" class="p-content">POPSIES</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="FUNKO GEAR" id="category-09" name="categories">
+								<label for="category-09" class="p-content">FUNKO GEAR</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="PINS" id="category-10" name="categories">
+								<label for="category-10" class="p-content">PINS</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="APPAREL" id="category-11" name="categories">
+								<label for="category-11" class="p-content">APPAREL</label>
+							</div>
+	
+							<div>
+								<input type="radio" value="ACCESSORIES" id="category-12" name="categories">
+								<label for="category-12" class="p-content">ACCESSORIES</label>
+							</div>
+						</div>
+					</fieldset>
+	
+					<label for="comments" class="p-content">Aditional comment (optional)</label>
+					<textarea name="" id="comments" cols="30" rows="10" placeholder="Leaver your comments here (max. 100 words)"></textarea>
+	
+					<input type="submit" class="boton-tipo-1" value="Check Order Status">
+				</form>
+			</section>
 		</section>
+
 	</main>
 
 	<a href="#" class="enlace-btn-flotante">
